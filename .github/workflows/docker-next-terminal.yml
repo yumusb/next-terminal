@@ -45,7 +45,6 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.actor }}/next-terminal:latest
-            ghcr.io/${{ github.actor }}/next-terminal:${{ env.VERSION }}
           cache-from: type=registry,ref=ghcr.io/${{ github.actor }}/next-terminal:cache
           cache-to: type=registry,ref=ghcr.io/${{ github.actor }}/next-terminal:cache,mode=max
 
