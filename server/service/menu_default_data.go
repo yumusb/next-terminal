@@ -455,5 +455,11 @@ var DefaultMenu = []*model.Menu{
 		model.NewPermission("POST", "/license"),
 		model.NewPermission("GET", "/license/machine-id"),
 	),
+
+	model.NewMenu("backup", "备份", "backup",
+		model.NewPermission("GET", "/backup/export"),
+		model.NewPermission("POST", "/backup/import"),
+	),
+
 	model.NewMenu("info", "个人中心", "root"),
 }
